@@ -23,7 +23,7 @@ function App() {
         >
           <div className="me">
             <div className="progress-circle">
-              <img className="me__photo photo" src={logo} alt="placeholder" />
+              <img className="me__photo photo" src={foto} alt="placeholder" />
             </div>
             <h2 className="heading2 me__name">Paulius Grigaliūnas</h2>
             <div className="badge">

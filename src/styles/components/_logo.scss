@@ -1,14 +1,18 @@
 .logo {
-    @include flex-center;
-    padding: $spacing $spacing 0;
-    text-decoration: none;
-    width: 100%;
+  @include flex-center;
+  padding: $spacing $spacing 0;
+  text-decoration: none;
+  width: 100%;
 
-    &__wrapper {
-        border-bottom: 1px solid $border;
-        display: flex;
-        justify-content: center;
-        padding-bottom: $spacing;
-        width: 100%;
-    }
+  &__wrapper {
+    border-bottom: 1px solid $border;
+    display: flex;
+    justify-content: center;
+    padding-bottom: $spacing;
+    width: 100%;
+  }
+  &__image {
+    height: 128px;
+    width: 128px;
+  }
 }
