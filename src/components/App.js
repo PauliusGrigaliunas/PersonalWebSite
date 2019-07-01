@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../images/logo.svg";
+import logo from "../images/PG-logo.png";
 import "../styles/App.css";
+import SideBar from "./sideBar/SideBar.jsx";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           Learn OP
         </a>
       </header>
+      <div>
+        <SideBar />
+      </div>
     </div>
   );
 }
