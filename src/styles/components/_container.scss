@@ -1,13 +1,13 @@
 .containerr {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-    padding: $spacing 85px 40px 40px;
-    width: 100%;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  overflow: hidden;
+  padding: $spacing 85px 40px 40px;
+  width: 90%;
 
-    &__header {
-        flex: $logo-size + $spacing + 1;
-    }
+  &__header {
+    flex: $logo-size + $spacing + 1;
+  }
 }
