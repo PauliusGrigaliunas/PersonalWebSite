@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "../images/PG-logo.png";
 import foto from "../images/paulius.png";
+import list from "../images/list.svg";
+import help from "../images/help.svg";
+import profile from "../images/profile-active.svg";
 import "../styles/App.css";
 import SideBar from "./sideBar/SideBar.jsx";
 import Header from "./header/Header.jsx";
@@ -33,7 +36,35 @@ function App() {
               Student
             </div>
           </div>
-          nav/nav
+
+          <nav>
+            <ul class="nav">
+              <li>
+                <a href="/profile" class="nav-link nav-link--active">
+                  <div class="nav-link__icon">
+                    <img src={profile} alt="profile" />
+                  </div>
+                  My profile
+                </a>
+              </li>
+              <li>
+                <a href="/list" className="nav-link">
+                  <div class="nav-link__icon">
+                    <img src={list} alt="list" />
+                  </div>
+                  Find a mentor
+                </a>
+              </li>
+              <li>
+                <a href="/help" className="nav-link">
+                  <div class="nav-link__icon">
+                    <img src={help} alt="help" />
+                  </div>
+                  Help
+                </a>
+              </li>
+            </ul>
+          </nav>
         </a>
       </div>
       components/copyright.html
