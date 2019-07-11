@@ -13,13 +13,13 @@ export default function Header() {
           <input
             type="text"
             className="searchbar__input"
-            placeholder="Search by a keyword..."
+            placeholder="paieška"
           />
         </div>
         <div class="header__nav">
           <a href="/a" className="header__notification-nav">
             <img src={bell} alt="bell" />
-            <div className="header__notification-count">2</div>
+            <div className="header__notification-count">0</div>
           </a>
           <a href="/b" class="header__profile-nav">
             <img

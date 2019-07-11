@@ -3,6 +3,7 @@ import logo from "../../images/PG-logo.png";
 import foto from "../../images/paulius.png";
 import list from "../../images/list.svg";
 import help from "../../images/help.svg";
+import school from "../../images/school.svg";
 import profile from "../../images/profile.svg";
 import "../../styles/site-styles.scss";
 
@@ -30,9 +31,9 @@ export default class SideBar extends Component {
               <h2 className="heading2 me__name">Paulius Grigaliūnas</h2>
               <div className="badge">
                 <div className="badge__icon">
-                  <img src="/images/school.svg" alt="school" />
+                  <img src={school} alt="school" />
                 </div>
-                Student
+                Programų sistemų studentas
               </div>
             </div>
 
@@ -43,7 +44,7 @@ export default class SideBar extends Component {
                     <div class="nav-link__icon">
                       <img src={profile} alt="profile" />
                     </div>
-                    My profile
+                    Profilis
                   </a>
                 </li>
                 <li>
@@ -51,7 +52,7 @@ export default class SideBar extends Component {
                     <div class="nav-link__icon">
                       <img src={list} alt="list" />
                     </div>
-                    Find a mentor
+                    Veiklos
                   </a>
                 </li>
                 <li>
@@ -59,14 +60,14 @@ export default class SideBar extends Component {
                     <div class="nav-link__icon">
                       <img src={help} alt="help" />
                     </div>
-                    Help
+                    Pagalba
                   </a>
                 </li>
               </ul>
             </nav>
           </a>
         </div>
-        components/copyright.html
+        <p class="sidebar__copyright">; 2019 Paulius Grigaliūnas</p>
       </div>
     );
   }

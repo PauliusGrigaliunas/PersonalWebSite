@@ -1,4 +1,7 @@
 import React from "react";
+import reorder from "../../images/reorder.svg";
+import caret from "../../images/caret-lines.svg";
+import search from "../../images/search.svg";
 
 export default function Head() {
   return (
@@ -9,9 +12,9 @@ export default function Head() {
             <div class="table__header-content">
               <div class="table__column">
                 <div class="table__label">
-                  <label for="name">Name</label>
+                  <label for="name">Pavadinimas</label>
                   <a href="/" class="table__header-action">
-                    <img src="/images/reorder.svg" alt="reorder" />
+                    <img src={reorder} alt="reorder" />
                   </a>
                 </div>
               </div>
@@ -22,7 +25,13 @@ export default function Head() {
                   class="table__search"
                   placeholder="Search..."
                 />
-                include src="../table-search.html"
+                <div class="table__search-icon">
+                  <img
+                    class="table__search-icon-img"
+                    src={search}
+                    alt="search"
+                  />
+                </div>
               </div>
             </div>
           </th>
@@ -30,12 +39,12 @@ export default function Head() {
             <div class="table__header-content">
               <div class="table__column">
                 <div class="table__label">
-                  <label for="specialist">Specialist at</label>
+                  <label for="specialist">Kategorija</label>
                   <a href="/" className="table__header-action">
-                    <img src="/images/reorder.svg" alt="reorder" />
+                    <img src={reorder} alt="reorder" />
                   </a>
                 </div>
-                <img src="/images/caret-lines.svg" alt="caret" />
+                <img src={caret} alt="caret" />
               </div>
               <div class="table__search-container">
                 <input
@@ -44,7 +53,13 @@ export default function Head() {
                   class="table__search"
                   placeholder="Search..."
                 />
-                include src="../table-search.html"
+                <div class="table__search-icon">
+                  <img
+                    class="table__search-icon-img"
+                    src={search}
+                    alt="search"
+                  />
+                </div>
               </div>
             </div>
           </th>
@@ -52,12 +67,12 @@ export default function Head() {
             <div class="table__header-content">
               <div class="table__column">
                 <div class="table__label">
-                  <label for="goal">Wants to learn</label>
+                  <label for="goal">Aprašymas</label>
                   <a href="/" class="table__header-action">
-                    <img src="/images/reorder.svg" alt="reorder" />
+                    <img src={reorder} alt="reorder" />
                   </a>
                 </div>
-                <img src="/images/caret-lines.svg" alt="caret" />
+                <img src={caret} alt="caret" />
               </div>
               <div class="table__search-container">
                 <input
@@ -66,7 +81,13 @@ export default function Head() {
                   class="table__search"
                   placeholder="Search..."
                 />
-                include src="../table-search.html"
+                <div class="table__search-icon">
+                  <img
+                    class="table__search-icon-img"
+                    src={search}
+                    alt="search"
+                  />
+                </div>
               </div>
             </div>
           </th>
@@ -74,12 +95,12 @@ export default function Head() {
             <div class="table__header-content">
               <div class="table__column">
                 <div class="table__label">
-                  <label for="location">Location</label>
+                  <label for="location">Vieta</label>
                   <a href="/" className="table__header-action">
-                    <img src="/images/reorder.svg" alt="caret" />
+                    <img src={reorder} alt="caret" />
                   </a>
                 </div>
-                <img src="/images/caret-lines.svg" alt="caret" />
+                <img src={caret} alt="caret" />
               </div>
               <div className="table__search-container">
                 <input
@@ -88,7 +109,13 @@ export default function Head() {
                   class="table__search"
                   placeholder="Search..."
                 />
-                include src="../table-search.html"
+                <div class="table__search-icon">
+                  <img
+                    class="table__search-icon-img"
+                    src={search}
+                    alt="search"
+                  />
+                </div>
               </div>
             </div>
           </th>
