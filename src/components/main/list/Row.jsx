@@ -1,6 +1,6 @@
 import React from "react";
-import envelope from "../../images/envelope.svg";
-import eye from "../../images/eye.svg";
+import envelope from "../../../images/envelope.svg";
+import eye from "../../../images/eye.svg";
 
 export default function Row() {
   return (

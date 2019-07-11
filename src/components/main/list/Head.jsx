@@ -1,7 +1,7 @@
 import React from "react";
-import reorder from "../../images/reorder.svg";
-import caret from "../../images/caret-lines.svg";
-import search from "../../images/search.svg";
+import reorder from "../../../images/reorder.svg";
+import caret from "../../../images/caret-lines.svg";
+import search from "../../../images/search.svg";
 
 export default function Head() {
   return (

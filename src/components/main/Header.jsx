@@ -17,11 +17,11 @@ export default function Header() {
           />
         </div>
         <div class="header__nav">
-          <a href="/a" className="header__notification-nav">
+          <a href="/notification" className="header__notification-nav">
             <img src={bell} alt="bell" />
             <div className="header__notification-count">0</div>
           </a>
-          <a href="/b" class="header__profile-nav">
+          <a href="/menu" class="header__profile-nav">
             <img
               src={foto}
               className="photo header__profile-photo"
