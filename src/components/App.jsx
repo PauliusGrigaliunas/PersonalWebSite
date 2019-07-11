@@ -1,15 +1,22 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "../styles/App.css";
 import SideBar from "./sideBar/SideBar.jsx";
-import Main from "./main/Main.jsx";
+import Header from "./main/Header";
+import List from "./main/list/List";
+import Help from "./main/help/Help";
 
 function App() {
-  // eslint-disable-next-line react/react-in-jsx-scope
   return (
-    <React.Fragment>
+    <Router>
       <SideBar />
-      <Main />
-    </React.Fragment>
+      <div className="containerr">
+        <Header />
+        <Route path="/profile" component={Help} />
+        <Route path="/list" component={List} />
+        <Route path="/help" component={Help} />
+      </div>
+    </Router>
   );
 }
 

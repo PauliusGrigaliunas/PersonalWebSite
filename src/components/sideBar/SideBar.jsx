@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Route, Link } from "react-router-dom";
 import logo from "../../images/PG-logo.png";
 import foto from "../../images/paulius.png";
 import list from "../../images/list.svg";
@@ -18,12 +19,7 @@ export default class SideBar extends Component {
             </div>
           </a>
 
-          <a
-            className="App-link"
-            href="https://karklas.mif.vu.lt/~pagr4013/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className="App-link" href="/" rel="noopener noreferrer">
             <div className="me">
               <div className="progress-circle">
                 <img className="me__photo photo" src={foto} alt="placeholder" />
@@ -40,28 +36,28 @@ export default class SideBar extends Component {
             <nav>
               <ul class="nav">
                 <li>
-                  <a href="/profile" class="nav-link">
+                  <Link to="/profile" className="nav-link">
                     <div class="nav-link__icon">
                       <img src={profile} alt="profile" />
                     </div>
                     Profilis
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/list" className="nav-link">
+                  <Link to="/list" className="nav-link">
                     <div class="nav-link__icon">
                       <img src={list} alt="list" />
                     </div>
                     Veiklos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/help" className="nav-link">
+                  <Link to="/help" className="nav-link">
                     <div class="nav-link__icon">
                       <img src={help} alt="help" />
                     </div>
                     Pagalba
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

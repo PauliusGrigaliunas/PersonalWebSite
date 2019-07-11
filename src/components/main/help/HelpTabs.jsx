@@ -26,8 +26,7 @@ export default function HelpTabs() {
             </li>
           </ul>
         </nav>
-
-        <Route path="/help" exact component={Info} />
+        <Route path="/help" component={Info} />
         <Route path="/contacts" component={Contacts} />
         <Route path="/comments" component={Comments} />
       </div>
@@ -36,11 +35,23 @@ export default function HelpTabs() {
 }
 
 function Info() {
-  return <h2>Home</h2>;
+  return (
+    <div class="profile content__scrollable">
+      <div class="profile__section section">
+        <h2 class="heading2">Pagrindinė informacija</h2>
+      </div>
+    </div>
+  );
 }
 
 function Contacts() {
-  return <h2>About</h2>;
+  return (
+    <div class="profile content__scrollable">
+      <div class="profile__section section">
+        <h2 class="heading2">Kontaktai</h2>
+      </div>
+    </div>
+  );
 }
 
 function Comments() {
