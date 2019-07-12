@@ -1,5 +1,6 @@
 import React from "react";
 import caretLeft from "../../../images/caret-left.svg";
+import Comment from "../help/Comment.jsx";
 
 export default function News() {
   return (
@@ -9,12 +10,22 @@ export default function News() {
         Ankstesnė versija
       </a>
       <div class="content content--stretch">
-        <div class="content__fixed">
-          include src="../components/about-user.html" include
-          src="../components/profile-tabs/profile-tabs-user-goals.html"
-        </div>
-        <div class="section content__scrollable">
-          include src="../components/goals/goals.html"
+        <div class="content__fixed" />
+        <div class="profile content__scrollable">
+          <div class="profile__section section">
+            <h2 class="heading2">Naujienos</h2>
+            <ul class="goals">
+              <li class="goals__row">
+                <Comment />
+              </li>
+              <li class="goals__row">
+                <Comment />
+              </li>
+              <li class="goals__row goals__row--last">
+                <Comment />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
