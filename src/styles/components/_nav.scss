@@ -1,30 +1,42 @@
 .nav {
+  @include reset-list-style;
 
-    @include reset-list-style;
+  &-link {
+    align-items: center;
+    border-left: $thick solid transparent;
+    color: $text-secondary;
+    display: flex;
+    padding: 17px 0;
+    text-decoration: none;
 
-    &-link {
-        align-items: center;
-        border-left: $thick solid transparent;
-        color: $text-secondary;
-        display: flex;
-        padding: 17px 0;
-        text-decoration: none;
-
-        &--active {
-            background: $background-site;
-            border-color: $active;
-            color: $active;
-        }
-
-        &__icon {
-            margin: 0 $spacing 0 25px;
-        }
-
+    @media only screen and (max-width: 600px) {
+      &-link {
+        align-items: unset;
+        border-left: unset;
+        color: unset;
+        display: unset;
+        padding: unset;
+        text-decoration: unset;
+      }
     }
 
+    &--active {
+      background: $background-site;
+      border-color: $active;
+      color: $active;
+    }
+
+    &__icon {
+      margin: 0 $spacing 0 25px;
+    }
+    @media only screen and (max-width: 600px) {
+      &__icon {
+        margin: 0 $spacing 0 0;
+      }
+    }
+  }
 }
 
-.nav li
-{
-    flex: 1;
+.nav li {
+  flex: 1;
 }

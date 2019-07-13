@@ -1,12 +1,12 @@
 .goals {
-    @include reset-list-style;
+  @include reset-list-style;
 
-    &__row {
-        border-radius: $radius;
-        padding-bottom: $spacing;
+  &__row {
+    border-radius: $radius;
+    padding-bottom: $spacing;
 
-        &--last {
-            padding-bottom: 30px;
-        }
+    &--last {
+      padding-bottom: 30px;
     }
+  }
 }

@@ -4,10 +4,23 @@
   flex-direction: column;
   height: 90%;
   overflow: hidden;
-  padding: $spacing 85px 40px 40px;
-  width: 90%;
+  padding: $spacing 85px 40px 20px;
+  width: 100%;
 
   &__header {
     flex: $logo-size + $spacing + 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .containerr {
+    align-items: unset;
+    display: flex;
+    justify-content: center;
+    padding-bottom: $spacing;
+    width: 100%;
+
+    &__header {
+      flex: $logo-size + $spacing + 1;
+    }
   }
 }

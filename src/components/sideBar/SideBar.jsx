@@ -63,7 +63,7 @@ export default class SideBar extends Component {
             </nav>
           </a>
         </div>
-        <p class="sidebar__copyright">; 2019 Paulius Grigaliūnas</p>
+        <p class="sidebar__copyright">2019 Paulius Grigaliūnas</p>
       </div>
     );
   }
