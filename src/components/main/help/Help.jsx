@@ -5,7 +5,7 @@ export default function Help() {
   return (
     <main class="main">
       <h1 class="heading1">Pagalba</h1>
-      <div class="content content--stretch">
+      <div class="content content--stretch content__scrollable">
         <HelpTabs />
       </div>
     </main>
