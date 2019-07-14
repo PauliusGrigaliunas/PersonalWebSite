@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Route, Link } from "react-router-dom";
+import Dropdown from "react-dropdown";
 import search from "../../images/search.svg";
 import bell from "../../images/bell.svg";
 import caretdown from "../../images/caret-down.svg";
@@ -17,11 +19,11 @@ export default function Header() {
           />
         </div>
         <div class="header__nav">
-          <a href="/notification" className="header__notification-nav">
+          <Link to="/" className="header__notification-nav">
             <img src={bell} alt="bell" />
             <div className="header__notification-count">0</div>
-          </a>
-          <a href="/menu" class="header__profile-nav">
+          </Link>
+          <Link to="/help" class="header__profile-nav">
             <img
               src={foto}
               className="photo header__profile-photo"
@@ -30,7 +32,7 @@ export default function Header() {
 
             <div className="header__profile-name">Paulius Grigaliūnas</div>
             <img src={caretdown} alt="caret-down" />
-          </a>
+          </Link>
         </div>
       </header>
     </div>
