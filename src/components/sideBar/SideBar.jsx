@@ -34,10 +34,10 @@ export default class SideBar extends Component {
             </div>
 
             <nav>
-              <ul class="nav">
+              <ul className="nav">
                 <li>
                   <Link to="/profile" className="nav-link">
-                    <div class="nav-link__icon">
+                    <div className="nav-link__icon">
                       <img src={profile} alt="profile" />
                     </div>
                     Profilis
@@ -45,7 +45,7 @@ export default class SideBar extends Component {
                 </li>
                 <li>
                   <Link to="/list" className="nav-link">
-                    <div class="nav-link__icon">
+                    <div className="nav-link__icon">
                       <img src={list} alt="list" />
                     </div>
                     Veiklos
@@ -53,7 +53,7 @@ export default class SideBar extends Component {
                 </li>
                 <li>
                   <Link to="/help" className="nav-link">
-                    <div class="nav-link__icon">
+                    <div className="nav-link__icon">
                       <img src={help} alt="help" />
                     </div>
                     Pagalba
@@ -63,7 +63,7 @@ export default class SideBar extends Component {
             </nav>
           </a>
         </div>
-        <p class="sidebar__copyright">2019 Paulius Grigaliūnas</p>
+        <p className="sidebar__copyright">2019 Paulius Grigaliūnas</p>
       </div>
     );
   }

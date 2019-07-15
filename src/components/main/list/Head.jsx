@@ -6,25 +6,29 @@ import search from "../../../images/search.svg";
 export default function Head() {
   return (
     <thead>
-      <th class="table__header-cell table__header-cell--short table__header-cell--first">
-        <div class="table__header-content">
-          <div class="table__column">
-            <div class="table__label">
+      <th className="table__header-cell table__header-cell--short table__header-cell--first">
+        <div className="table__header-content">
+          <div className="table__column">
+            <div className="table__label">
               <label for="name">Pavadinimas</label>
-              <a href="/" class="table__header-action">
+              <a href="/" className="table__header-action">
                 <img src={reorder} alt="reorder" />
               </a>
             </div>
           </div>
-          <div class="table__search-container">
+          <div className="table__search-container">
             <input
               type="text"
               id="name"
-              class="table__search"
+              className="table__search"
               placeholder="Search..."
             />
-            <div class="table__search-icon">
-              <img class="table__search-icon-img" src={search} alt="search" />
+            <div className="table__search-icon">
+              <img
+                className="table__search-icon-img"
+                src={search}
+                alt="search"
+              />
             </div>
           </div>
         </div>

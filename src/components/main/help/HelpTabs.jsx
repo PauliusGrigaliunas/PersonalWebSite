@@ -8,19 +8,19 @@ export default function HelpTabs() {
     <Router>
       <div>
         <nav>
-          <ul class="tabs content__fixed">
+          <ul className="tabs content__fixed">
             <li>
-              <Link to="/help" class="tabs__link">
+              <Link to="/help" className="tabs__link">
                 Bendra informacija
               </Link>
             </li>
             <li>
-              <Link to="/contacts" class="tabs__link">
+              <Link to="/contacts" className="tabs__link">
                 Kontaktai
               </Link>
             </li>
             <li>
-              <Link to="/comments" class="tabs__link">
+              <Link to="/comments" className="tabs__link">
                 Komentarai
               </Link>
             </li>
@@ -36,9 +36,9 @@ export default function HelpTabs() {
 
 function Info() {
   return (
-    <div class="profile content__scrollable">
-      <div class="profile__section section">
-        <h2 class="heading2">Pagrindinė informacija</h2>
+    <div className="profile content__scrollable">
+      <div className="profile__section section">
+        <h2 className="heading2">Pagrindinė informacija</h2>
       </div>
     </div>
   );
@@ -46,9 +46,9 @@ function Info() {
 
 function Contacts() {
   return (
-    <div class="profile content__scrollable">
-      <div class="profile__section section">
-        <h2 class="heading2">Kontaktai</h2>
+    <div className="profile content__scrollable">
+      <div className="profile__section section">
+        <h2 className="heading2">Kontaktai</h2>
       </div>
     </div>
   );
@@ -56,20 +56,20 @@ function Contacts() {
 
 function Comments() {
   return (
-    <div class="profile content__scrollable">
-      <div class="profile__section section">
-        <a href="/" class="edit">
+    <div className="profile content__scrollable">
+      <div className="profile__section section">
+        <a href="/" className="edit">
           <img src={edit} alt="edit" />
         </a>
-        <h2 class="heading2">Komentarai</h2>
-        <ul class="goals">
-          <li class="goals__row">
+        <h2 className="heading2">Komentarai</h2>
+        <ul className="goals">
+          <li className="goals__row">
             <Comment />
           </li>
-          <li class="goals__row">
+          <li className="goals__row">
             <Comment />
           </li>
-          <li class="goals__row goals__row--last">
+          <li className="goals__row goals__row--last">
             <Comment />
           </li>
         </ul>

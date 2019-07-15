@@ -4,12 +4,12 @@ import Goals from "./Goals.jsx";
 
 export default function Profile() {
   return (
-    <main class="main">
-      <div class="content content--stretch">
-        <div class="content__fixed">
+    <main className="main">
+      <div className="content content--stretch">
+        <div className="content__fixed">
           <About />
         </div>
-        <div class="section content__scrollable">
+        <div className="section content__scrollable">
           <Goals />
         </div>
       </div>

@@ -7,8 +7,8 @@ export default function List() {
     <main className="main">
       <h1 className="heading1">Veiklos</h1>
       <div className="content content--bottom-square">
-        <div class="content__scrollable">
-          <table class="table">
+        <div className="content__scrollable">
+          <table className="table">
             <Head />
             <Body />
           </table>

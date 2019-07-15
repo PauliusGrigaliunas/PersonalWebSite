@@ -7,6 +7,7 @@
     "netlify-cli": "^2.11.23",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
+    "react-bootstrap-dropdown-menu": "^1.1.15",
     "react-dom": "^16.8.6",
     "react-dropdown": "^1.6.4",
     "react-redux": "^7.1.0",
