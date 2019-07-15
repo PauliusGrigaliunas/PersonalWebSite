@@ -15,6 +15,7 @@ export default function Row() {
           Pavyzdys
         </div>
       </td>
+
       <td className="table__cell">Pavyzdžiai...</td>
       <td className="table__cell">http...</td>
       <td className="table__cell table__cell--short table__cell--last">

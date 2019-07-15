@@ -65,7 +65,7 @@
       border-bottom: 1px solid $border;
       font-weight: normal;
       padding: $spacing-table-cell / 2;
-      vertical-align: top;
+      vertical-align: middle !important;
       width: $table-cell-width;
 
       &--first {
@@ -106,7 +106,7 @@
   &__cell {
     line-height: $line-height-spacious;
     padding: 12px $spacing-table-cell / 2;
-    vertical-align: middle;
+    vertical-align: middle !important;
     width: $table-cell-width;
 
     &--first {
