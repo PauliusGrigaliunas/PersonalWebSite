@@ -10,18 +10,18 @@ export default function HelpTabs() {
         <nav>
           <ul className="tabs content__fixed">
             <li>
-              <Link to="/help" className="tabs__link">
-                Bendra informacija
+              <Link to="/help">
+                <div className="tabs__link">Bendra informacija</div>
               </Link>
             </li>
             <li>
-              <Link to="/contacts" className="tabs__link">
-                Kontaktai
+              <Link to="/contacts">
+                <div className="tabs__link">Kontaktai</div>
               </Link>
             </li>
             <li>
-              <Link to="/comments" className="tabs__link">
-                Komentarai
+              <Link to="/comments">
+                <div className="tabs__link">Komentarai</div>
               </Link>
             </li>
           </ul>
