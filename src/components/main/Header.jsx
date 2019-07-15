@@ -3,9 +3,7 @@ import { BrowserRouter as Route, Link } from "react-router-dom";
 import { DropdownMenu, MenuItem } from "react-bootstrap-dropdown-menu";
 import search from "../../images/search.svg";
 import bell from "../../images/bell.svg";
-import caretdown from "../../images/caret-down.svg";
 import foto from "../../images/paulius.png";
-import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 
 export default class Header extends React.Component {
@@ -17,9 +15,6 @@ export default class Header extends React.Component {
     console.log(`Option selected:`, selectedOption);
   };
   render() {
-    const options = ["one", "two", "three"];
-    const { selectedOption } = this.state;
-
     return (
       <div className="container__header">
         <header className="header">
@@ -52,10 +47,18 @@ export default class Header extends React.Component {
             className="header__notification-nav"
             position="left"
           >
-            <MenuItem text="Naujienos" location="/" />
-            <MenuItem text="Profilis" location="/profile" />
-            <MenuItem text="Veiklos" location="/list" />
-            <MenuItem text="Pagalbos puslapis" location="/help" />
+            <Link to="/">
+              <MenuItem text="Naujienos" />
+            </Link>
+            <Link to="/profile">
+              <MenuItem text="Profilis" />
+            </Link>
+            <Link to="/list">
+              <MenuItem text="Veiklos" />
+            </Link>
+            <Link to="/help">
+              <MenuItem text="Pagalbos puslapis" />
+            </Link>
           </DropdownMenu>
         </header>
       </div>
