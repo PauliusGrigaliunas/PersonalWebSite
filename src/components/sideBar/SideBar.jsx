@@ -13,13 +13,13 @@ export default class SideBar extends Component {
     return (
       <div className="sidebar">
         <div>
-          <a href="/" className="logo">
+          <div href="/" className="logo">
             <div className="logo__wrapper">
               <img className="logo__image" src={logo} alt="PG Logo" />
             </div>
-          </a>
+          </div>
 
-          <a className="App-link" href="/" rel="noopener noreferrer">
+          <div className="App-link" href="/" rel="noopener noreferrer">
             <div className="me">
               <div className="progress-circle">
                 <img className="me__photo photo" src={foto} alt="placeholder" />
@@ -36,32 +36,38 @@ export default class SideBar extends Component {
             <nav>
               <ul className="nav">
                 <li>
-                  <Link to="/profile" className="nav-link">
-                    <div className="nav-link__icon">
-                      <img src={profile} alt="profile" />
+                  <Link to="/profile">
+                    <div className="nav-link">
+                      <div className="nav-link__icon">
+                        <img src={profile} alt="profile" />
+                      </div>
+                      Profilis
                     </div>
-                    Profilis
                   </Link>
                 </li>
                 <li>
-                  <Link to="/list" className="nav-link">
-                    <div className="nav-link__icon">
-                      <img src={list} alt="list" />
+                  <Link to="/list">
+                    <div className="nav-link">
+                      <div className="nav-link__icon">
+                        <img src={list} alt="list" />
+                      </div>
+                      Veiklos
                     </div>
-                    Veiklos
                   </Link>
                 </li>
                 <li>
-                  <Link to="/help" className="nav-link">
-                    <div className="nav-link__icon">
-                      <img src={help} alt="help" />
+                  <Link to="/help">
+                    <div className="nav-link">
+                      <div className="nav-link__icon">
+                        <img src={help} alt="help" />
+                      </div>
+                      Pagalba
                     </div>
-                    Pagalba
                   </Link>
                 </li>
               </ul>
             </nav>
-          </a>
+          </div>
         </div>
         <p className="sidebar__copyright">2019 Paulius Grigaliūnas</p>
       </div>

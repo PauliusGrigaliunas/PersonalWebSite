@@ -36,7 +36,7 @@ export default class Header extends React.Component {
               <img src={bell} alt="bell" />
               <div className="header__notification-count">0</div>
             </Link>
-            <Link to="/help" className="header__profile-nav">
+            <Link to="/profile" className="header__profile-nav">
               <img
                 src={foto}
                 className="photo header__profile-photo"
@@ -44,20 +44,19 @@ export default class Header extends React.Component {
               />
 
               <div className="header__profile-name">Paulius Grigaliūnas</div>
-              <img src={caretdown} alt="caret-down" />
             </Link>
-            <Dropdown
-              value={selectedOption}
-              onChange={this.handleChange}
-              options={options}
-            />
-            <DropdownMenu userName="Chris Smith">
-              <MenuItem text="Home" location="/home" />
-              <MenuItem text="Edit Profile" location="/profile" />
-              <MenuItem text="Change Password" location="/change-password" />
-              <MenuItem text="Privacy Settings" location="/privacy-settings" />
-            </DropdownMenu>
           </div>
+          <DropdownMenu
+            triggerType="image"
+            caratColor="#FF0000"
+            className="header__notification-nav"
+            position="left"
+          >
+            <MenuItem text="Naujienos" location="/" />
+            <MenuItem text="Profilis" location="/profile" />
+            <MenuItem text="Veiklos" location="/list" />
+            <MenuItem text="Pagalbos puslapis" location="/help" />
+          </DropdownMenu>
         </header>
       </div>
     );
