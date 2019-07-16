@@ -13,11 +13,13 @@ export default class SideBar extends Component {
     return (
       <div className="sidebar">
         <div>
-          <div href="/" className="logo">
-            <div className="logo__wrapper">
-              <img className="logo__image" src={logo} alt="PG Logo" />
+          <Link to="/">
+            <div className="logo">
+              <div className="logo__wrapper">
+                <img className="logo__image" src={logo} alt="PG Logo" />
+              </div>
             </div>
-          </div>
+          </Link>
 
           <div className="App-link" href="/" rel="noopener noreferrer">
             <div className="me">
