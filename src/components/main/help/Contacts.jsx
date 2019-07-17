@@ -1,7 +1,7 @@
 import React from "react";
 import HelpTabs from "./HelpTabs.jsx";
 
-export default function Help() {
+export default function Contacts() {
   return (
     <main className="main">
       <h1 className="heading1">Pagalba</h1>
@@ -9,7 +9,7 @@ export default function Help() {
         <HelpTabs />
         <div className="profile content__scrollable">
           <div className="profile__section section">
-            <h2 className="heading2">Pagrindinė informacija</h2>
+            <h2 className="heading2">Kontaktai</h2>
           </div>
         </div>
       </div>
