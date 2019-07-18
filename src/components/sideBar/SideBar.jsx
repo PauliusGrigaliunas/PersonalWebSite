@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../images/PG-logo.png";
 import foto from "../../images/paulius.png";
 import list from "../../images/list.svg";

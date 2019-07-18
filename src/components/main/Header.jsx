@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { DropdownMenu, MenuItem } from "react-bootstrap-dropdown-menu";
 import search from "../../images/search.svg";
 import bell from "../../images/bell.svg";

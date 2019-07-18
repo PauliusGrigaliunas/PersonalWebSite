@@ -1,8 +1,5 @@
 import React from "react";
-import { BrowserRouter as Route, Link } from "react-router-dom";
-import Help from "./Help";
-import Contacts from "./Contacts";
-import Comments from "./Comments";
+import { Link } from "react-router-dom";
 
 export default function HelpTabs() {
   return (
@@ -26,9 +23,6 @@ export default function HelpTabs() {
           </li>
         </ul>
       </nav>
-      <Route path="/help" component={Help} />
-      <Route path="/contacts" component={Contacts} />
-      <Route path="/comments" component={Comments} />
     </React.Component>
   );
 }
