@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "../styles/App.css";
 import SideBar from "./sideBar/SideBar.jsx";
 import Header from "./main/Header";
@@ -16,12 +16,14 @@ function App() {
       <SideBar />
       <div className="containerr">
         <Header />
-        <Route exact path="/" component={News} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/list" component={List} />
-        <Route path="/help" component={Help} />
-        <Route path="/contacts" component={Contacts} />
-        <Route path="/comments" component={Comments} />
+        <Switch>
+          <Route exact path="/" component={News} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/list" component={List} />
+          <Route path="/help" component={Help} />
+          <Route path="/contacts" component={Contacts} />
+          <Route path="/comments" component={Comments} />
+        </Switch>
       </div>
     </Router>
   );
