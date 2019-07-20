@@ -7,7 +7,7 @@ import { NewsContext } from "../main/news/NewsContext";
 import "react-dropdown/style.css";
 
 export default function Navigation() {
-  const [news, setNews] = useContext(NewsContext);
+  const [news] = useContext(NewsContext);
 
   return (
     <React.Fragment>

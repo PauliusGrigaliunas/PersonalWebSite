@@ -16,19 +16,45 @@ export default function AddNew() {
 
   const addNew = e => {
     e.preventDefault();
-    setNews(prevNews => [...prevNews, { title: title, text: paragraph }]);
+    setNews(prevNews => [{ title: title, text: paragraph }, ...prevNews]);
   };
 
   return (
-    <form onSubmit={addNew}>
-      <input type="text" name="title" value={title} onChange={updateTitle} />
-      <input
-        type="text"
-        name="paragraph"
-        value={paragraph}
-        onChange={updateParagraph}
-      />
-      <button>Submit</button>
+    <form onSubmit={addNew} class="form">
+      <div class="profile__section section">
+        <div class="form__row">
+          <div class="form__field">
+            <label for="name" class="form__label">
+              Title
+            </label>
+            <input
+              className="form__input"
+              type="text"
+              value={title}
+              onChange={updateTitle}
+            />
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__field form__field--wide">
+            <label for="text" class="form__label">
+              Text
+            </label>
+            <input
+              type="text"
+              className="form__input"
+              value={paragraph}
+              onChange={updateParagraph}
+            />
+          </div>
+        </div>
+
+        <div class="form__row form__row--last">
+          <div class="form__field">
+            <button>Pateikti</button>
+          </div>
+        </div>
+      </div>
     </form>
   );
 }
