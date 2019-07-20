@@ -25,7 +25,7 @@ export default function AddNew() {
         <div class="form__row">
           <div class="form__field">
             <label for="name" class="form__label">
-              Title
+              Pavadinimas{" "}
             </label>
             <input
               className="form__input"
@@ -38,7 +38,7 @@ export default function AddNew() {
         <div class="form__row">
           <div class="form__field form__field--wide">
             <label for="text" class="form__label">
-              Text
+              Naujiena
             </label>
             <input
               type="text"
