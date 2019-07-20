@@ -1,6 +1,7 @@
 import React from "react";
 import caretLeft from "../../../images/caret-left.svg";
 import NewsList from "./NewsList";
+import AddNew from "./AddNew";
 
 export default function News() {
   return (
@@ -15,6 +16,7 @@ export default function News() {
           <div className="profile__section section">
             <h2 className="heading2">Naujienos</h2>
             <ul className="goals">
+              <AddNew />
               <NewsList />
             </ul>
           </div>
