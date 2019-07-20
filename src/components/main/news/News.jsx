@@ -15,7 +15,6 @@ export default function News() {
           <div className="profile__section section">
             <h2 className="heading2">Naujienos</h2>
             <ul className="goals">
-              {" "}
               <NewsList />
             </ul>
           </div>
