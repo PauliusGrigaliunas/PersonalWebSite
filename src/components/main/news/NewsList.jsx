@@ -5,29 +5,34 @@ import deletebut from "../../../images/delete.svg";
 export default function NewsList() {
   const [news, setNews] = useContext(NewsContext);
 
-  const removeNew = e => {
-    e.preventDefault();
-    var array = news;
-    var index = array.indexOf(e.target.value);
-    if (index !== -1) {
-      array.splice(index, 1);
-      setNews(array);
-    }
-  };
+  function removeNew(item) {
+    const removedNew = news.filter(news => {
+      return news.title !== item.title;
+    });
+
+    setNews([...removedNew]);
+
+    console.log(item.title);
+  }
 
   return (
     <div>
       {news.map(message => (
-        <li className="goals__row">
+        <li key={message} className="goals__row">
           <div className="goal">
             <div className="form__field--input">
               <div className="form__input-suffix">
-                <button type="button" className="button" onSubmit={removeNew}>
+                <button
+                  type="button"
+                  className="button"
+                  onClick={e => removeNew(message)}
+                >
                   <img src={deletebut} alt="delete" />
                 </button>
               </div>
             </div>
-            <h3 className="heading3">{message.title}</h3> <p>{message.text}</p>
+            <h3 className="heading3">{message.title}</h3>
+            <p>{message.text}</p>
           </div>
         </li>
       ))}
