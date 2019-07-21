@@ -1,97 +1,104 @@
 .form {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $spacing;
+    width: 630px;
 
-    &__row {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: $spacing;
-        width: 630px;
-
-        &--last {
-            padding-bottom: $spacing-large;
-        }
-
-        &--goal {
-            width: 454px;
-        }
+    &--last {
+      padding-bottom: $spacing-large;
     }
 
-    &__field {
-        display: flex;
-        flex-direction: column;
-        width: 300px;
+    &--goal {
+      width: 454px;
+    }
+  }
 
-        &--wide {
-            width: 100%;
-        }
+  &__field {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
 
-        &--with-controls {
-            flex-direction: row;
-        }
+    &--wide {
+      width: 100%;
     }
 
-    &__input {
-        background: $background-contrast;
-        border: 1px solid $border;
-        border-radius: $radius;
-        color: $text-main;
-        font-size: 15px;
-        height: 50px;
-        padding: $spacing;
+    &--with-controls {
+      flex-direction: row;
+    }
+    &--input {
+      position: absolute;
+      right: $skill-padding;
+    }
+  }
 
-        &--short {
-            height: 40px;
-            padding: $spacing-small $spacing;
-        }
+  &__input {
+    background: $background-contrast;
+    border: 1px solid $border;
+    border-radius: $radius;
+    color: $text-main;
+    font-size: 15px;
+    height: 50px;
+    padding: $spacing;
 
-        &-suffix {
-            position: absolute;
-            right: $spacing;
-            top: $spacing;
-
-            &-container {
-                position: relative;
-            }
-
-            &-field {
-                width: 100%;
-            }
-        }
-
-        &-wrapper {
-            display: flex;
-            flex-direction: column;
-            width: $skill-width + 2 * $skill-padding;
-        }
-
-        &-controls {
-            align-items: center;
-            display: flex;
-            padding-top: $spacing;
-        }
-
-        &--disabled {
-            background: $background-secondary;
-            color: $text-secondary;
-        }
-
-        &--textarea {
-            height: 82px;
-            line-height: $line-height-spacious;
-        }
-
-        &--small {
-            font-size: $text-medium;
-        }
-
+    &--short {
+      height: 40px;
+      padding: $spacing-small $spacing;
     }
 
-    &__label {
-        color: $text-secondary;
-        padding-bottom: $spacing-tiny;
+    &-suffix {
+      position: absolute;
+      right: $spacing;
+      top: $spacing;
+
+      &-container {
+        position: relative;
+      }
+
+      &-field {
+        width: 100%;
+      }
+      &-right {
+        right: $skill-padding;
+        position: absolute;
+        right: $skill-padding;
+      }
     }
 
-    &__separator {
-        border-bottom: 1px solid $border;
-        padding-bottom: $spacing;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: $skill-width + 2 * $skill-padding;
     }
+
+    &-controls {
+      align-items: center;
+      display: flex;
+      padding-top: $spacing;
+    }
+
+    &--disabled {
+      background: $background-secondary;
+      color: $text-secondary;
+    }
+
+    &--textarea {
+      height: 82px;
+      line-height: $line-height-spacious;
+    }
+
+    &--small {
+      font-size: $text-medium;
+    }
+  }
+
+  &__label {
+    color: $text-secondary;
+    padding-bottom: $spacing-tiny;
+  }
+
+  &__separator {
+    border-bottom: 1px solid $border;
+    padding-bottom: $spacing;
+  }
 }

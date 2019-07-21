@@ -25,7 +25,7 @@ export default function AddNew() {
         <div class="form__row">
           <div class="form__field">
             <label for="name" class="form__label">
-              Pavadinimas{" "}
+              Pavadinimas
             </label>
             <input
               className="form__input"
@@ -51,7 +51,7 @@ export default function AddNew() {
 
         <div class="form__row form__row--last">
           <div class="form__field">
-            <button>Pateikti</button>
+            <button className="button--primary">Pateikti</button>
           </div>
         </div>
       </div>
