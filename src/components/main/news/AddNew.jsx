@@ -4,7 +4,7 @@ import { NewsContext } from "./NewsContext";
 export default function AddNew() {
   const [title, settitle] = useState("");
   const [paragraph, setparagraph] = useState("");
-  const [News, setNews] = useContext(NewsContext);
+  const [news, setNews] = useContext(NewsContext);
 
   const updateTitle = e => {
     settitle(e.target.value);
