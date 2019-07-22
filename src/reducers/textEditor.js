@@ -1,7 +1,11 @@
 const textReducer = (state = "", action) => {
   switch (action.type) {
     case "TEXTEDIT":
-      return state + action.payload;
+      return action.payload;
+    case "ISEMPTY":
+      return action.payload;
+    case "ISONLIST":
+      return action.payload;
     default:
       return state;
   }

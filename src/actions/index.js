@@ -12,7 +12,7 @@ export const decrement = (number = 1) => {
   };
 };
 
-export const textEdit = (string = "abc") => {
+export const textEdit = (string = "") => {
   return {
     type: "TEXTEDIT",
     payload: string
